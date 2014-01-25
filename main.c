@@ -11,12 +11,14 @@ void push(int item);
 int pop();
 main(){
       int n,i,s,ch,j;
+awal :
       system("cls");
       printf("masukkan angka ");
       scanf("%d",&n);
-      if (n < 5){
+      if (n < 6){
             printf("Ordo matriks yang dimasukkan minimal 6x6");
             getch();
+            goto awal;
       }else{
       for(i=1;i<=n;i++){
       for(j=1;j<=n;j++){
