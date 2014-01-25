@@ -14,6 +14,10 @@ main(){
       system("cls");
       printf("masukkan angka ");
       scanf("%d",&n);
+      if (n < 5){
+            printf("Ordo matriks yang dimasukkan minimal 6x6");
+            getch();
+      }else{
       for(i=1;i<=n;i++){
       for(j=1;j<=n;j++){
       printf("masukkan %d jika mempunyai simpul %d selain itu 0 ",i,j);
@@ -36,8 +40,8 @@ main(){
             case 1:bfs(s,n); goto a;
             case 2:dfs(s,n); goto a;
             case 3: break;    }
-      return(0);  }
-
+      return(0);  }}
+      
 void bfs(int s,int n){
       int p,i;    add(s);     vis[s]=1;   p=del();
       if(p!=0)
